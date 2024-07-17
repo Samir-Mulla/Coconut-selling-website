@@ -20,5 +20,5 @@ export const products = [
     price: 70,
     image: "/coconut-product3.jpg",
   },
-  // Add more products as needed
+
 ];

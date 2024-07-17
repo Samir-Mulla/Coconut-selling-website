@@ -12,7 +12,7 @@ const Input = ({ id, name, type, label, value, onChange, error, pattern }) => {
         name={name}
         value={value}
         onChange={onChange}
-        pattern={pattern} // Add pattern attribute for validation
+        pattern={pattern}
         className={`w-full px-3 py-2 border ${
           error ? "border-red-500" : "border-gray-300"
         } rounded focus:outline-none focus:border-blue-500`}
