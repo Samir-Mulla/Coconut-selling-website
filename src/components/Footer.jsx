@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-lime-200 p-4 shadow-md mt-8">
       <div className="container mx-auto text-center">
-        <div className="flex justify-center space-x-4 mb-4">
+        <div className="flex justify-center space-x-4 mb-4 pt-6">
           <a
             href="https://www.facebook.com"
             target="_blank"
@@ -37,7 +37,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-black">
-          &copy; 2024 Dawood's Coconut, All rights reserved.
+          &copy; 2024 Dawood's Coconut Store, All rights reserved.
         </p>
 
         <div className="mt-4">
@@ -46,7 +46,7 @@ const Footer = () => {
             <FaMobileAlt size={24} className="text-black" />
             <span className="font-bold">+1-234-567-890</span>
           </div>
-          <div className="flex justify-center items-center space-x-2 mt-2">
+          <div className="flex justify-center items-center space-x-2 mt-2 pb-12">
             <FaMobileAlt size={24} className="text-black" />
             <span className="font-bold">+1-987-654-321</span>
           </div>
@@ -57,11 +57,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               Image by macrovector on Freepik
-            </a>
-            <a href="https://www.freepik.com/free-photo/fresh-coconuts-background_1273502.htm#fromView=search&page=1&position=46&uuid=a3cdfd73-33a5-4a3f-bbe2-445a58a05305">
-              Image by topntp26 on Freepik
-            </a>
-            {" ,"}Photo by{" "}
+            </a>{" "}
+            Photo by
             <a href="https://unsplash.com/@xiaoyulifish?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Xiaoyu Li
             </a>{" "}
@@ -86,6 +83,9 @@ const Footer = () => {
             <a href="https://unsplash.com/photos/coconut-fruit-AXFVS1yRD0Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Unsplash
             </a>
+            <a href="https://www.freepik.com/free-photo/fresh-coconuts-background_1273502.htm#fromView=search&page=1&position=46&uuid=a3cdfd73-33a5-4a3f-bbe2-445a58a05305">
+              Image by topntp26 on Freepik
+            </a>{" "}
           </p>
         </div>
       </div>
