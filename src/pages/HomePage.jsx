@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 const HomePage = () => {
   return (
     <>
-      <Header title="Dawood's Coconut" />
+      <Header  title="Dawood's Coconut Store"/>
       <Hero />
     </>
   );
