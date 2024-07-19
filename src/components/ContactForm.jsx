@@ -60,6 +60,10 @@ const ContactForm = ({ onSubmit }) => {
         dateTime: null,
       });
       setSubmitted(true);
+      return true;
+    } else {
+      setSubmitted(false);
+      return false;
     }
   };
 
@@ -148,7 +152,8 @@ const ContactForm = ({ onSubmit }) => {
             phoneNumber={phoneNumber}
             formData={formData}
             product={product}
-            onClick={handleOrderViaWhatsApp}
+            validateForm={validateForm}
+            onSubmit={handleOrderViaWhatsApp}
           />
         </form>
       ) : (
