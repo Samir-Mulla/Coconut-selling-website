@@ -4,13 +4,14 @@ import {
   FaTwitter,
   FaInstagram,
   FaMobileAlt,
+  FaUserCircle,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-lime-200 p-4 shadow-md mt-8">
+    <footer className="bg-lime-200 p-6 shadow-md mt-8">
       <div className="container mx-auto text-center">
-        <div className="flex justify-center space-x-4 mb-4 pt-6">
+        <div className="flex justify-center space-x-4 mb-6 pt-6">
           <a
             href="https://www.facebook.com"
             target="_blank"
@@ -36,21 +37,35 @@ const Footer = () => {
             <FaInstagram size={24} />
           </a>
         </div>
-        <p className="text-black">
+        <p className="text-black mb-4">
           &copy; 2024 Dawood's Coconut Store, All rights reserved.
         </p>
 
         <div className="mt-4">
-          <h3 className="text-lg text-gray-800 mb-2">Contact Us</h3>
-          <div className="flex justify-center items-center space-x-2">
-            <FaMobileAlt size={24} className="text-black" />
-            <span className="font-bold">+1-234-567-890</span>
+          <h3 className="text-lg text-gray-800 mb-4">Contact Us</h3>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-16 mt-4">
+            <div className="flex justify-center items-center space-x-2">
+              <FaUserCircle size={40} className="text-black" />
+              <div>
+                <span className="font-bold">Javed Mulla</span>
+                <div className="flex items-center space-x-2">
+                  <FaMobileAlt size={24} className="text-black" />
+                  <span className="font-bold">+1-987-654-321</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center space-x-2">
+              <FaUserCircle size={40} className="text-black" />
+              <div>
+                <span className="font-bold">Sameer Mulla</span>
+                <div className="flex items-center space-x-2">
+                  <FaMobileAlt size={24} className="text-black" />
+                  <span className="font-bold">+1-123-456-7890</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center items-center space-x-2 mt-2 pb-12">
-            <FaMobileAlt size={24} className="text-black" />
-            <span className="font-bold">+1-987-654-321</span>
-          </div>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-600 mt-8">
             <a
               href="https://www.freepik.com/free-vector/realistic-empty-hammock-palm-trees-flock-birds-sky-white_6804331.htm#query=coconut%20tree&position=2&from_view=keyword&track=ais_user&uuid=ba23ba82-dc1e-4fa1-b661-37b32868ba0e"
               target="_blank"
