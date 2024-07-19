@@ -1,7 +1,13 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WhatsAppShare = ({ phoneNumber, formData, product, onClick }) => {
+const WhatsAppShare = ({
+  phoneNumber,
+  formData,
+  product,
+  validateForm,
+  onSubmit,
+}) => {
   const generateWhatsAppMessage = () => {
     const message =
       `Hello, I am interested in buying the following product:\n\n` +
@@ -18,19 +24,21 @@ const WhatsAppShare = ({ phoneNumber, formData, product, onClick }) => {
   };
 
   const handleOrderViaWhatsApp = () => {
-    onClick(); // Handle form submission via callback
-    const message = generateWhatsAppMessage();
-    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(whatsappLink, "_blank", "noopener,noreferrer");
+    if (validateForm()) {
+      onSubmit();
+      const message = generateWhatsAppMessage();
+      const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+        message
+      )}`;
+      window.open(whatsappLink, "_blank", "noopener,noreferrer");
+    }
   };
 
   return (
     <div className="px-6 pt-4 pb-2">
       <button
         onClick={handleOrderViaWhatsApp}
-        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center m-auto"
+        className="bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded flex items-center m-auto"
       >
         <FaWhatsapp className="mr-2" size={24} /> Order via WhatsApp
       </button>
