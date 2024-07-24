@@ -17,7 +17,7 @@ const Product = ({ product }) => {
           <h2 className="text-lg font-bold text-gray-800">{product.name}</h2>
           <p className="text-sm text-gray-600 mb-2">{product.description}</p>
           <p className="flex items-center justify-center text-xl font-extrabold">
-            <span className="text-lime-600">₹</span>
+            <span className="text-lime-600">{product.currency}</span>
             <span className="text-black">{product.price}</span>
           </p>
 
