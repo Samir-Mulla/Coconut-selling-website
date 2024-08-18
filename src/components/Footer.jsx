@@ -60,7 +60,7 @@ const Footer = () => {
                 <span className="font-bold">Sameer Mulla</span>
                 <div className="flex items-center space-x-2">
                   <FaMobileAlt size={24} className="text-black" />
-                  <span className="font-bold">+1-123-456-7890</span>
+                  <span className="font-bold">+91 9832494949</span>
                 </div>
               </div>
             </div>

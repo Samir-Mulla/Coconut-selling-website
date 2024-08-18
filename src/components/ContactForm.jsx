@@ -18,7 +18,7 @@ const ContactForm = ({ onSubmit }) => {
   });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const phoneNumber = "+9156533461";
+  const phoneNumber = "+919832494949";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
