@@ -50,7 +50,10 @@ const Footer = () => {
                 <span className="font-bold">Javed Mulla</span>
                 <div className="flex items-center space-x-2">
                   <FaMobileAlt size={24} className="text-black" />
-                  <span className="font-bold">+91 9921228546</span>
+                  <span className="font-bold underline underline-offset-4">
+                    {" "}
+                    <a href="tel:+919921228546">+91 9921228546</a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -60,7 +63,10 @@ const Footer = () => {
                 <span className="font-bold">Sameer Mulla</span>
                 <div className="flex items-center space-x-2">
                   <FaMobileAlt size={24} className="text-black" />
-                  <span className="font-bold">+91 9832494949</span>
+                  <span className="font-bold underline underline-offset-4">
+                    {" "}
+                    <a href="tel:+919832494949">+91 9832494949</a>
+                  </span>
                 </div>
               </div>
             </div>
