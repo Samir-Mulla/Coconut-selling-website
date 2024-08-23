@@ -6,9 +6,10 @@ const Hero = () => {
   return (
     <section className="bg-hero-pattern bg-cover bg-center h-[65rem] lg:h-[80rem] flex flex-col justify-center items-center">
       <div className="text-center w-full">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black bg-lime-50  rounded my-72 lg:mt-1">
-          Buy fresh coconuts online from us. Fast home delivery services
-          available.
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black bg-lime-50  rounded my-72 lg:mt-1 pb-2 text-balance">
+          Buy fresh coconuts online from Dawood's Coconut Wholesaler in Pune.
+          Fast coconut delivery service available. Contact us at the numbers
+          below.
         </h2>
         <Link
           to="/products"
