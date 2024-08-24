@@ -107,7 +107,7 @@ const Footer = () => {
             <a href="https://www.freepik.com/free-photo/fresh-coconuts-background_1273502.htm#fromView=search&page=1&position=46&uuid=a3cdfd73-33a5-4a3f-bbe2-445a58a05305">
               Image by topntp26 on Freepik
             </a>{" "}
-            <p className="text-black font-semibold mb-4 decoration-lime-600 text-md">
+            <p className="text-black mb-4 decoration-lime-600 text-md">
               Developed & Managed By{" "}
               <a
                 href="https://samirmulla-dev.netlify.app/"
